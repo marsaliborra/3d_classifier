@@ -1,0 +1,9 @@
+# Colab ya trae torch + CUDA instalados; se listan aquí por reproducibilidad
+# y por si se ejecuta localmente en CPU.
+torch>=2.0
+numpy>=1.23
+trimesh>=3.21        # cargar mallas .off y muestrear puntos sobre su superficie
+scikit-learn>=1.2    # matriz de confusión, splits si hicieran falta
+matplotlib>=3.6
+seaborn>=0.12
+tqdm>=4.65
