@@ -2,6 +2,7 @@
 # y por si se ejecuta localmente en CPU.
 torch>=2.0
 numpy>=1.23
+requests>=2.28        # descarga del dataset ModelNet10
 trimesh>=3.21        # cargar mallas .off y muestrear puntos sobre su superficie
 scikit-learn>=1.2    # matriz de confusión, splits si hicieran falta
 matplotlib>=3.6
