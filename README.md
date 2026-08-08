@@ -56,7 +56,14 @@ Engineer en una empresa de deep learning 3D aplicado a datos CAD/CAE. Con
 
 ## Cómo ejecutarlo (Google Colab)
 
-TODO: completar en el commit del notebook de entrenamiento.
+1. Abre [colab.research.google.com](https://colab.research.google.com).
+2. `File > Open notebook > GitHub`, pega la URL de este repo
+   (`https://github.com/marsaliborra/3d_classifier`) y selecciona el
+   notebook que quieras ejecutar (p.ej. `notebooks/01_data_exploration.ipynb`).
+3. `Runtime > Change runtime type > T4 GPU` (necesario para el entrenamiento;
+   la exploración de datos funciona igual en CPU, pero es más lenta).
+4. Ejecuta las celdas en orden. La primera celda clona este repo dentro del
+   propio Colab (`!git clone ...`) para poder importar `src/`.
 
 ## Resultados
 
