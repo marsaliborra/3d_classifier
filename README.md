@@ -49,7 +49,8 @@ Engineer en una empresa de deep learning 3D aplicado a datos CAD/CAE. Con
 │   ├── train.py         # loop de entrenamiento
 │   └── evaluate.py    # accuracy, matriz de confusión, visualización de predicciones
 ├── notebooks/
-│   └── 01_data_exploration.ipynb   # exploración del dataset (pensado para Colab)
+│   ├── 01_data_exploration.ipynb      # exploración del dataset (pensado para Colab)
+│   └── 02_train_and_evaluate.ipynb    # entrenamiento + evaluación (pensado para Colab)
 ├── data/               # dataset descargado (no versionado, ver .gitignore)
 └── outputs/            # checkpoints y figuras generadas (no versionado)
 ```
