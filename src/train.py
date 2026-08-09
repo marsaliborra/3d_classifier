@@ -8,7 +8,7 @@ Pensado para ejecutarse en Colab con GPU T4, desde la RAIZ del repo, con:
 (no `!python src/train.py` directamente: al usar `from src.data import ...`
 el script necesita ejecutarse como modulo del paquete `src`, para que Python
 resuelva el import relativo a la raiz del repo. Ver
-notebooks/01_data_exploration.ipynb para el mismo patron de setup/clonado).
+notebooks/pointnet_modelnet10.ipynb para el mismo patron de setup/clonado).
 Tambien funciona en CPU, solo que mucho mas lento.
 
 SIMPLIFICACION CONSCIENTE (documentada tambien en README.md):

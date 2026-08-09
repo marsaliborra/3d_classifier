@@ -49,8 +49,7 @@ Engineer en una empresa de deep learning 3D aplicado a datos CAD/CAE. Con
 │   ├── train.py         # loop de entrenamiento
 │   └── evaluate.py    # accuracy, matriz de confusión, visualización de predicciones
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb      # exploración del dataset (pensado para Colab)
-│   └── 02_train_and_evaluate.ipynb    # entrenamiento + evaluación (pensado para Colab)
+│   └── pointnet_modelnet10.ipynb   # notebook único: datos + entrenamiento + evaluación (Colab)
 ├── data/               # dataset descargado (no versionado, ver .gitignore)
 └── outputs/            # checkpoints y figuras generadas (no versionado)
 ```
@@ -59,12 +58,16 @@ Engineer en una empresa de deep learning 3D aplicado a datos CAD/CAE. Con
 
 1. Abre [colab.research.google.com](https://colab.research.google.com).
 2. `File > Open notebook > GitHub`, pega la URL de este repo
-   (`https://github.com/marsaliborra/3d_classifier`) y selecciona el
-   notebook que quieras ejecutar (p.ej. `notebooks/01_data_exploration.ipynb`).
-3. `Runtime > Change runtime type > T4 GPU` (necesario para el entrenamiento;
-   la exploración de datos funciona igual en CPU, pero es más lenta).
+   (`https://github.com/marsaliborra/3d_classifier`) y selecciona
+   `notebooks/pointnet_modelnet10.ipynb`.
+3. `Runtime > Change runtime type > T4 GPU`.
 4. Ejecuta las celdas en orden. La primera celda clona este repo dentro del
    propio Colab (`!git clone ...`) para poder importar `src/`.
+
+Es un único notebook de principio a fin (datos + entrenamiento + evaluación)
+a propósito: Colab gratuito solo permite una sesión con GPU activa a la vez,
+así que tener dos notebooks separados obligaba a cerrar la sesión del
+primero para abrir el segundo, perdiendo la caché de datos ya descargada.
 
 ## Resultados
 
